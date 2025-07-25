@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Contact Us</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .hero-contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .contact-card {
+            transition: transform 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .form-floating .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .map-container {
+            height: 400px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-bg {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-lightning-charge-fill text-warning"></i>
+                TechSolutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold mb-4">Get In Touch</h1>
+                    <p class="lead">Ready to transform your business? Let's discuss how we can help you achieve your technology goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg contact-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-geo-alt-fill display-4 text-primary mb-4"></i>
+                            <h4 class="card-title mb-3">Visit Our Office</h4>
+                            <p class="card-text text-muted">123 Tech Street<br>Digital City, TC 12345<br>United States</p>
+                            <a href="#" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg contact-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-telephone-fill display-4 text-success mb-4"></i>
+                            <h4 class="card-title mb-3">Call Us</h4>
+                            <p class="card-text text-muted">Phone: +1 (555) 123-4567<br>Toll Free: 1-800-TECH-SOL<br>Available 24/7</p>
+                            <a href="tel:+15551234567" class="btn btn-outline-success">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg contact-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-envelope-fill display-4 text-info mb-4"></i>
+                            <h4 class="card-title mb-3">Email Us</h4>
+                            <p class="card-text text-muted">General: info@techsolutions.com<br>Support: support@techsolutions.com<br>Sales: sales@techsolutions.com</p>
+                            <a href="mailto:info@techsolutions.com" class="btn btn-outline-info">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-5">
+                                <h2 class="display-5 fw-bold mb-3">Send Us a Message</h2>
+                                <p class="lead text-muted">Fill out the form below and we'll get back to you within 24 hours</p>
+                            </div>
+                            <form>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                            <label for="firstName">First Name *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                            <label for="lastName">Last Name *</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                            <label for="email">Email Address *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="company" placeholder="Company Name">
+                                        <label for="company">Company Name</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="service" required>
+                                            <option value="">Select a Service</option>
+                                            <option value="cloud">Cloud Solutions</option>
+                                            <option value="web">Web Development</option>
+                                            <option value="mobile">Mobile Development</option>
+                                            <option value="analytics">Data Analytics</option>
+                                            <option value="security">Cybersecurity</option>
+                                            <option value="consulting">IT Consulting</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label for="service">Service of Interest *</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="budget">
+                                            <option value="">Select Budget Range</option>
+                                            <option value="under-10k">Under $10,000</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="over-100k">Over $100,000</option>
+                                        </select>
+                                        <label for="budget">Project Budget</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                        <label for="message">Tell us about your project *</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for tech insights and updates
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            I agree to the <a href="#" class="text-decoration-none">Privacy Policy</a> and <a href="#" class="text-decoration-none">Terms of Service</a> *
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send-fill me-2"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-center mb-5">Find Us</h2>
+                    <div class="map-container shadow-lg">
+                        <div class="text-center">
+                            <i class="bi bi-geo-alt-fill display-1 text-muted mb-3"></i>
+                            <h4 class="text-muted">Interactive Map</h4>
+                            <p class="text-muted">123 Tech Street, Digital City, TC 12345</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-map me-2"></i>
+                                Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Project timelines vary depending on scope and complexity. Simple websites typically take 2-4 weeks, while complex enterprise solutions can take 3-6 months. We provide detailed timelines during our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide ongoing support?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer comprehensive support packages including maintenance, updates, monitoring, and technical support. Our support plans are tailored to your specific needs and budget.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What technologies do you work with?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We work with a wide range of modern technologies including React, Angular, Vue.js, Node.js, Python, .NET, AWS, Azure, Google Cloud, and many more. We choose the best technology stack for each project.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can you help with digital transformation?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Digital transformation is one of our core specialties. We help businesses modernize their operations, migrate to cloud platforms, implement new technologies, and optimize processes for the digital age.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Get Started?</h2>
+                    <p class="lead mb-4">Let's discuss your project and see how we can help you achieve your goals.</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="tel:+15551234567" class="btn btn-light btn-lg">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            Call Now
+                        </a>
+                        <a href="mailto:info@techsolutions.com" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-lightning-charge-fill text-warning"></i>
+                        TechSolutions
+                    </h5>
+                    <p class="text-light">Delivering innovative technology solutions that drive business growth and digital transformation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Cloud Solutions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Mobile Apps</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Data Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        123 Tech Street, Digital City, TC 12345
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        +1 (555) 123-4567
+                    </p>
+                    <p class="text-light">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        info@techsolutions.com
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 TechSolutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
